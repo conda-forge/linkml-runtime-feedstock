@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 1.9.4
+  version: "1.9.5"
 
 recipe:
   name: linkml-runtime
@@ -10,15 +10,15 @@ recipe:
 
 source:
   - url: https://pypi.org/packages/source/l/linkml-runtime/linkml_runtime-${{ version }}.tar.gz
-    sha256: ac8f01aa4f92eb32ca377bf15ce42dad63fc2d2201e08e2b955896e34016075b
+    sha256: 78dc1383adf11ad5f20bb11b6adde56ed566fbd2429a292d57699ad4596c738a
     target_directory: dist
   - url: https://github.com/linkml/linkml-runtime/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 0740a3fe4af76bf8a16740248e20b922296d279d80dc3134d2a6fee1dd2fff46
+    sha256: 621abdc10c9136a93c8a30f26feb1ee1cb5120fe7facf91dfa088e5feb2fd044
     target_directory: src
 
 build:
   noarch: python
-  number: 1
+  number: 0
 
 outputs:
   - package:
